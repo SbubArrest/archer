@@ -1,2 +1,2 @@
-# archer
+# Archer
 Discord bot
