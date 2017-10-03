@@ -7,5 +7,5 @@ exports.run = (client) => {
     client.users.forEach(user =>{
       client.funcs.userCheck(client,user);
     });
-  },3000);
+  },1000);
 };
