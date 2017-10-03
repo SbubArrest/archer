@@ -47,7 +47,7 @@ logger = new (
           : '';
         return `${timestamp} [${level.toUpperCase()}] ${stripAnsi(message)} ${obj}`;
       },
-      filename   : path.join(process.cwd(),`logs/Bot-0.log`),
+      filename   : path.join(process.cwd(),`logs/Bot.log`),
     }),
   ],
 });
