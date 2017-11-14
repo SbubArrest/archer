@@ -1,0 +1,13 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    min-height: 100%;
+}
+.main-color {
+    background-color: #3273dc;
+}
+.top{
+    background-color: #3273dc;
+}

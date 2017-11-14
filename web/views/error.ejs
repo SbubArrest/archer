@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Error - <%= error.status %></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+        <link rel="stylesheet" href="/stylesheets/error.css">
+    </head>
+    <body>
+        <div align="center" class="container">
+            <div class="box">
+                <article class="media">
+                    <div class="media-content e404">
+                        <i class="fa fa-exclamation-triangle fa-5x fa-xlg" aria-hidden="true"></i>
+                        <h1 class="title">Error <%= error.status %></h1>
+                        <h1 class="title">Oops! An error has occured.</h1>
+                        <h3 class="subtitle">If you keep encountering this message, contact support <a href="https://discord.gg/JUAEMKe">here</a>.</h3>
+                        <h3 class="subtitle"><% message %></h3>
+                    </div>
+                </article>
+            </div>
+            <footer>
+                <p>&copy; Loganrose 2017</p>
+            </footer>
+        </div>
+    </body>
+</html>

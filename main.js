@@ -14,7 +14,7 @@ require('winston-daily-rotate-file');
 require('moment-duration-format');
 
 /* Global var */
-const config = require('./config.js').bot[0];
+const config = require('./config.js').testing[0];
 
 const version = config.version;
 global.embedColor = config.embedColor;
@@ -53,12 +53,13 @@ logger = new (
 });
 const developers = config.developers;
 const permStructure = new PermLevels()
-  .addLevel(0, false, () => true)
+  .addLevel(1, false, () => true)
+  .addLevel(2, false, (client,msg) => msg.member.roles.exists("name", "Bot Commander"))
   .addLevel(9, false, (client,msg) => developers.includes(msg.author.id))
   .addLevel(10, false, (client, msg) => msg.author === client.owner);
 
 const client = new Client({
-  ownerID      : config.ownerID,
+ // ownerID      : config.ownerID,
   prefix       : config.prefix,
   permStructure,
   cmdLogging   : true,

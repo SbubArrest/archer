@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <% if(!server) { %>
+        <title>Server - 404</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+        <link rel="stylesheet" href="/stylesheets/custom.css">
+      <% } else { %>
+    <title>Server - <%= server.name %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/stylesheets/custom.css">
+    <% }%>
+  </head>
+  <body>
+    <div align="center" class="container">
+        <% if(!server) { %>
+        <div class="box">
+          <article class="media">
+            <div class="media-content e404">
+              <i class="fa fa-exclamation-triangle fa-5x fa-xlg" aria-hidden="true"></i>
+              <h1 class="title">Server not found!</h1>
+            </div>
+          </article>
+        </div>
+        <% } else { %>
+        <div align="left" class="box">
+          <article class="media">
+            <div class="media-left">
+              <img src="<%= server.iconurl %>">
+            </div>
+            <div class="media-content">
+              <h1 class="title"><%= server.name %></h1>
+              <h2 class="subtitle">ID: <%= server.id %></h2>
+              <h2 class="subtitle">Owner: <%= server.owner.name %>#<%= server.owner.discrim %></h2>
+            </div>
+          </article>
+        </div>
+        <footer>
+          <p>&copy; Loganrose 2017</p>
+        </footer>
+        <% } %>
+    </div>
+  </body>
+</html>

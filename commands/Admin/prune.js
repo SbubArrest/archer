@@ -1,6 +1,6 @@
 exports.run = (client, msg, [ammount]) => {
     
-};
+}
 exports.conf = {
     enabled: true,
     runIn: ['text'],

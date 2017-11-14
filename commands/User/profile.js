@@ -1,26 +1,39 @@
-const snekfetch = require("snekfetch");
-const fs = require("fs-nextra");
-const { resolve, join } = require('path');
-exports.run = async(client, msg, [user]) => {
-  var Canvas = require('canvas'),
-    Image = Canvas.Image,
-    canvas = new Canvas(200, 200),
-    ctx = canvas.getContext('2d');
+exports.run = async(client, msg, [action, element]) => {
+  const value = msg.content.split(" ").splice(3).join(" ");
+  const user = msg.mentions.users.first() || msg.author;
+  if (!action || action.startsWith(`<@`)) {
+    client.providers.get("mongodb").get("Users", user.id).then(results => {
+      if (!results) return msg.reply("Sorry, that user doesn't exist in my database");
+      const embed = new client.methods.Embed();
+      embed.setTitle(`${results.name}`)
+        .setThumbnail(results.avatarurl)
+        .addField("Rank", `${results.rank}`, true)
+        .addField("AP", `${results.ap}`, true)
+        .addField("Status", `${results.status}`, true)
+        .addField("Credits", `${results.credits}`, true)
+        .addField("Joined", `${results.joined}`, true)
+        .addField("Discriminator", `${results.discrim}`, true)
+        .addField("ID", `${results.id}`, true)
+      if (results.bio !== "null") {
+        embed.addField("Bio", `${results.bio}`, false)
+      }
+      if (results.website !== "null") {
+        embed.addField("Website", `${results.website}`, false)
+      }
+      msg.channel.sendEmbed(embed);
+    })
+  }
+  else {
+    switch (action.toLowerCase()) {
+      case 'edit':
+        msg.reply('mmmmmmkay')
+        break;
+      default:
+        msg.reply("PLEASE")
 
-  ctx.font = '30px Impact';
-  ctx.rotate(.1);
-  ctx.fillText("Awesome!", 50, 100);
-
-  var te = ctx.measureText('Awesome!');
-  ctx.strokeStyle = 'rgba(0,0,0,0.5)';
-  ctx.beginPath();
-  ctx.lineTo(50, 102);
-  ctx.lineTo(50 + te.width, 102);
-  ctx.stroke();
-  canvas.toBuffer(function(err, buf){
-    msg.send('', { file: { attachment:buf } });
-  });
-}
+    }
+  }
+};
 
 exports.conf = {
   enabled: true,
@@ -29,12 +42,12 @@ exports.conf = {
   permLevel: 1,
   botPerms: [],
   requiredFuncs: [],
-  cooldown: 5000,
+  cooldown: 5,
 };
 
 exports.help = {
   name: 'profile',
   description: 'Shows the profile card of a user',
-  usage: '[user:user]',
+  usage: '[action:string] [element:string] [value:string]',
   usageDelim: ' '
 };
