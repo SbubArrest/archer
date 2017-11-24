@@ -10,7 +10,7 @@ exports.conf = {
     enabled: true,
     runIn: ['text', 'dm', 'group'],
     aliases: ['an'],
-    permLevel: 0,
+    permLevel: 9,
     botPerms: ["EMBED_LINKS"],
     requiredFuncs: [],
     cooldown: 3000,

@@ -17,7 +17,7 @@ module.exports = (client, guild) => {
                 "msgchannel": "0",
                 "modlogchannel": "0",
                 "iconurl": `${guild.iconURL({format:"png"})}`,
-                "modlog": [{}]
+                "modlog": []
             };
             const data1 = {
                 "_id": `${guild.id}`,
@@ -35,7 +35,7 @@ module.exports = (client, guild) => {
                 "msgchannel": "0",
                 "modlogchannel": "0",
                 "iconurl": `null`,
-                "modlog": [{}]
+                "modlog": []
             };
             if (guild.iconURL("png",512) === null) {
                 client.providers.get('mongodb').insert('Servers', guild.id, data1);

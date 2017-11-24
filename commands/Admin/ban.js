@@ -1,27 +1,24 @@
 exports.run = (client, msg, [user]) => {
-    if (msg.guild.roles.exists("name", "Bot Commander")) {
-        var GuildMember = msg.guild.members.get(msg.mentions.users.array()[0].id);
-        GuildMember.ban();
-        msg.reply("That user has been banned");
-    }
-    else{
-        throw Error('The `Bot Commander` role doesnt exist!')
-    }
-
+    let reason = msg.content.split(" ").splice(2).join(" ");
+    var GuildMember = msg.guild.members.get(msg.mentions.users.array()[0].id);
+    if(!GuildMember.bannable){msg.reply("Sorry that user isn't bannable"); return;}
+    GuildMember.ban({reason:reason});
+    msg.reply("That user has been banned");
+    client.funcs.modLog(client,msg,"ban",reason,msg.author,GuildMember);
 };
 exports.conf = {
     enabled: true,
     runIn: ['text'],
     aliases: [],
     permLevel: 2,
-    botPerms: [""],
+    botPerms: ["BAN_MEMBERS"],
     requiredFuncs: [],
-    cooldown: 3000,
+    cooldown: 3,
 };
 
 exports.help = {
     name: 'ban',
     description: 'Ban a user from the server',
-    usage: '<user:string>',
+    usage: '<user:string> [reason:string]',
     usageDelim: ' ',
 };

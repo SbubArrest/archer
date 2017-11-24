@@ -3,7 +3,7 @@ const { inspect } = require("util");
 /* eslint-disable no-eval */
 exports.run = async (client, msg, [code]) => {
   try {
-    let evaled = eval(code);
+    let evaled = await eval(code);
     if (evaled instanceof Promise) evaled = await evaled;
     if (typeof evaled !== "string") evaled = inspect(evaled, { depth: 0 });
     msg.sendCode("js", client.funcs.clean(client, evaled));
@@ -17,7 +17,7 @@ exports.conf = {
   enabled: true,
   runIn: ["text", "dm", "group"],
   aliases: ["ev"],
-  permLevel: 10,
+  permLevel: 9,
   botPerms: ["SEND_MESSAGES"],
   requiredFuncs: [],
   requiredSettings: [],
