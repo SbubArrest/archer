@@ -2,8 +2,9 @@ const chalk = require('chalk');
 const winston = require('winston');
 const path = require('path');
 const util = require('util');
-
 const stripAnsi = require('strip-ansi');
+
+let bot;
 
 bot = {};
 bot.configCache = new Map();
@@ -14,13 +15,12 @@ require('winston-daily-rotate-file');
 require('moment-duration-format');
 
 /* Global var */
-const config = require('./config.js').testing[0];
-
-const version = config.version;
+const config = require('./config.js').beta[0];
+global.embedColor = config.embedColor;
 global.embedColor = config.embedColor;
 const {Client, PermLevels} = require('komada');
 
-/* Global var */
+/* Global logger */
 logger = new (
   winston.Logger
 )({
@@ -67,3 +67,5 @@ const client = new Client({
 });
 
 client.login(config.token);
+
+module.exports = config;

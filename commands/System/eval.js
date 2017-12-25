@@ -26,6 +26,6 @@ exports.conf = {
 exports.help = {
   name: "eval",
   description: "Evaluates arbitrary Javascript. Reserved for bot owner.",
-  usage: "<expression:str>",
+  usage: "<q:string>",
   usageDelim: "",
 };
