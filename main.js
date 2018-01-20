@@ -15,9 +15,9 @@ require('winston-daily-rotate-file');
 require('moment-duration-format');
 
 /* Global var */
-const config = require('./config.js').beta[0];
-global.embedColor = config.embedColor;
-global.embedColor = config.embedColor;
+global.config = require('./config.js').beta[0];
+global.embedColor = global.config.embedColor;
+global.embedColor = global.config.embedColor;
 const {Client, PermLevels} = require('komada');
 
 /* Global logger */
@@ -51,7 +51,7 @@ logger = new (
     }),
   ],
 });
-const developers = config.developers;
+const developers = global.config.developers;
 const permStructure = new PermLevels()
   .addLevel(1, false, () => true)
   .addLevel(2, false, (client,msg) => msg.member.roles.exists("name", "Bot Commander"))
@@ -60,12 +60,12 @@ const permStructure = new PermLevels()
 
 const client = new Client({
  // ownerID      : config.ownerID,
-  prefix       : config.prefix,
+  prefix       : global.config.prefix,
   permStructure,
   cmdLogging   : true,
   provider     : { engine: "mongodb" },
 });
 
-client.login(config.token);
+client.login(global.config.token);
 
-module.exports = config;
+module.exports = global.config;

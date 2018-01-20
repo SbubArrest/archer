@@ -1,4 +1,9 @@
-exports.run = async(client, msg, [action, element]) => {
+const canvas = require('../../classes/canvas')
+
+exports.run = async (client, msg, [user]) => {
+  canvas.drawProfile().then(img => {
+    
+  })
 };
 
 exports.conf = {
@@ -14,6 +19,6 @@ exports.conf = {
 exports.help = {
   name: 'profile',
   description: 'Shows the profile card of a user',
-  usage: '[action:string] [element:string] [value:string]',
+  usage: '[user:string]',
   usageDelim: ' '
 };

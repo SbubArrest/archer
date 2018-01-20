@@ -4,6 +4,8 @@ exports.run = (client) => {
     client.guilds.forEach(guild =>{
       client.funcs.serverCheck(client,guild);
     });
+  },1000);
+  setTimeout(function(){
     client.users.forEach(user =>{
       client.funcs.userCheck(client,user);
     });

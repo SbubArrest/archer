@@ -1,4 +1,4 @@
-const config = require("../../config.js").testing[0];
+const config = global.config;
 exports.run = async(client, msg, [action]) => {
 
   const method = msg.channel.type === 'dm' ? 'author' : 'channel';
