@@ -1,5 +1,5 @@
 exports.run = (client, msg) => {
-  if (msg.author.id === client.config.ownerID) return;
+  //if (msg.author.id === client.config.ownerID) return;
   if (!msg.cmd.conf.cooldown || msg.cmd.conf.cooldown <= 0) return;
 
   msg.cmd.cooldown.set(msg.author.id, Date.now());

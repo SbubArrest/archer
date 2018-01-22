@@ -1,9 +1,7 @@
 exports.run = (client, msg) => {
-  client.providers.get("mongodb").get("Users", msg.author.id).then(data =>{
+  return client.providers.get("mongodb").get("Users", msg.author.id).then(data =>{
     msg.reply(`Your balance is: \`${data.credits}\` credits.`);
-    return;
   });
-  return;
 };
 
 exports.conf = {

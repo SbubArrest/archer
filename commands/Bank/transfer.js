@@ -31,7 +31,8 @@ exports.run = async(client, msg, [user, ammount, ...note]) => {
         embed.addField("Receipt ID", `${id}`, false);
         embed.addField("Note", `${note.toString().split(",").splice(0).join(" ")}`, false);
         embed.setTimestamp();
-        msg.channel.send({ embed: embed })
+        msg.channel.send({ embed: embed });
+        receipent.send({embed:embed});
       });
     })
   });
@@ -45,7 +46,7 @@ exports.conf = {
   botPerms: ["SEND_MESSAGES"],
   requiredFuncs: [],
   requiredSettings: [],
-  cooldown: 3,
+  cooldown: 60,
 };
 
 exports.help = {
