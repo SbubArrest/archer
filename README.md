@@ -1,5 +1,5 @@
 # Archer
-## Contact
+### Contact
 [Discord Server](https://discord.gg/4E4pgNT)
 
 ### Setup
@@ -21,5 +21,5 @@
 ```
 
 
-## More info
+### More info
 Please just leave the About command alone. Credit me if you do choose to use this bot.
