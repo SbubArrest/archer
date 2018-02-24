@@ -1,5 +1,4 @@
 # Archer
-______________________________
 ## Contact
 [Discord Server](https://discord.gg/4E4pgNT)
 
