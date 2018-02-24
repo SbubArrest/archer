@@ -9,7 +9,8 @@ class EvalCommand extends Command {
       args: [
         {
           id:"code",
-          type:"string"
+          type:"string",
+          match: "content",
         }
       ]
     })
