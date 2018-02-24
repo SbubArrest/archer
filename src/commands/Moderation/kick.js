@@ -15,7 +15,8 @@ class KickCommand extends Command {
         },
         {
           id: 'reason',
-          type: 'string'
+          type: 'string',
+          match: "content"
         }
       ],
       description: {
