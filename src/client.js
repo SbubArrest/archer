@@ -1,5 +1,18 @@
-const { AkairoClient, SQLiteProvider } = require('discord-akairo');
-//const sqlite = require('sqlite');
+const { AkairoClient } = require('discord-akairo');
+let r = require('rethinkdb');
+const { dboptions } = require('../auth.json');
+const Logger = require('./util/logger');
+let db = r.connect({
+  "host": dboptions.host,
+  "user": dboptions.user,
+  "password": dboptions.password,
+  "db":"test"
+});
+db.then(function(conn) {
+  Logger.info(`Connected to database ${conn.db}`)
+}).error(function(error) {
+  Logger.error(error);
+});
 
 class Client extends AkairoClient {
   constructor() {
@@ -14,13 +27,9 @@ class Client extends AkairoClient {
       allowMention: true,
       storeMessages: true,
     });
-    /*const db = sqlite.open('../db.sqlite')
-      .then(d => d.run('CREATE TABLE IF NOT EXISTS guilds (id TEXT NOT NULL UNIQUE, settings TEXT)').then(() => d));
-    this.settings = new SQLiteProvider(db, 'guilds', { dataColumn: 'settings' });*/
   }
 
   async start(token) {
-    //await this.settings.init();
     await this.login(token);
   }
 }
