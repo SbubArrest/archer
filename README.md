@@ -1,2 +1,0 @@
-# Archer
-Discord bot

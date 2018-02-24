@@ -1,1 +1,3 @@
-logs/
+auth.json
+node_modules
+db.sqlite

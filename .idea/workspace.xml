@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ad4c9b8-e78c-43ab-bc0d-5327155af21b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/auth.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/client.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/commands/General/help.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/commands/Moderation/ban.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/commands/Moderation/kick.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/listeners/ready.js" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bwd/guilds_Schema.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bwd/purge.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/canvas.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Admin/ban.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Admin/conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Admin/kick.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Admin/purge.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Bank/balance.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Bank/daily.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Bank/receipt.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Bank/transfer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Core/help.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Core/invite.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Core/ping.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Core/stats.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Games/fortnite.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Games/roblox.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Knowledge Center/dictionary.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Knowledge Center/google.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Knowledge Center/image.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Knowledge Center/thesaurus.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Knowledge Center/urban.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/Knowledge Center/wolfram.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/System/announce.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/System/blacklist.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/System/eval.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/commands/User/profile.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/config.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/events/guildCreate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/events/guildMemberAdd.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/events/presenceUpdate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/events/ready.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/finalizers/commandCooldown.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/functions/genReceipt.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/functions/getPrefix.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/functions/modLog.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/functions/serverCheck.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/functions/userCheck.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/inhibitors/blacklist.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/inhibitors/commandCooldown.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/inhibitors/disable.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/providers/mongodb.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/util/google.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/util/music.js" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/finalizers/commandCooldown.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/commands/User/profile.js" />
+        <option value="$PROJECT_DIR$/node_modules/komada/src/events/message.js" />
+        <option value="$PROJECT_DIR$/functions/message.js" />
+        <option value="$PROJECT_DIR$/events/message.js" />
+        <option value="$PROJECT_DIR$/events/guildCreate.js" />
+        <option value="$PROJECT_DIR$/util/loader.js" />
+        <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/src/commands/ping.js" />
+        <option value="$PROJECT_DIR$/bot.js" />
+        <option value="$PROJECT_DIR$/struct/Client.js" />
+        <option value="$PROJECT_DIR$/auth.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/commands/ban.js" />
+        <option value="$PROJECT_DIR$/src/inhibitors/blacklist.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/src/listeners/ready.js" />
+        <option value="$PROJECT_DIR$/src/client.js" />
+        <option value="$PROJECT_DIR$/src/commands/help.js" />
+        <option value="$PROJECT_DIR$/src/commands/General/help.js" />
+        <option value="$PROJECT_DIR$/src/commands/Moderation/kick.js" />
+        <option value="$PROJECT_DIR$/src/commands/Moderation/ban.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="103" />
+    <option name="y" value="197" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="archer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="archer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="archer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="archer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="archer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="archer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="archer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="archer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="General" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="archer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="archer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="Moderation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NodeJS\archer\src\commands\Moderation" />
+      <recent name="D:\NodeJS\archer\src\commands\General" />
+      <recent name="D:\NodeJS\archer\src\commands" />
+      <recent name="D:\NodeJS\archer\src\functions" />
+      <recent name="D:\NodeJS\archer\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="client.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="client.js" working-dir="$PROJECT_DIR$/src" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ad4c9b8-e78c-43ab-bc0d-5327155af21b" name="Default" comment="" />
+      <created>1517714775158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517714775158</updated>
+      <workItem from="1517714777322" duration="5182000" />
+      <workItem from="1517777715055" duration="27000" />
+      <workItem from="1517803675187" duration="276000" />
+      <workItem from="1517803952949" duration="2197000" />
+      <workItem from="1517870751762" duration="1758000" />
+      <workItem from="1517874096123" duration="367000" />
+      <workItem from="1518740951880" duration="97000" />
+      <workItem from="1518752532035" duration="119000" />
+      <workItem from="1519358817219" duration="1474000" />
+      <workItem from="1519426367205" duration="5128000" />
+      <workItem from="1519434054474" duration="867000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17492000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25383395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Quokka" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3318078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/listeners/ready.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="108" lean-forward="false" selection-start-line="10" selection-start-column="108" selection-end-line="10" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commands/General/help.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="40" lean-forward="true" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commands/Moderation/ban.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot.js" />
+    <entry file="file://$PROJECT_DIR$/auth.json" />
+    <entry file="file://$PROJECT_DIR$/bot.js" />
+    <entry file="file://$PROJECT_DIR$/auth.json" />
+    <entry file="file://$PROJECT_DIR$/bot.js" />
+    <entry file="file://$PROJECT_DIR$/auth.json" />
+    <entry file="file://$PROJECT_DIR$/struct/Client.js" />
+    <entry file="file://$PROJECT_DIR$/src/client.js" />
+    <entry file="file://$PROJECT_DIR$/config/config.js" />
+    <entry file="file://$PROJECT_DIR$/src/client.js" />
+    <entry file="file://$PROJECT_DIR$/config/config.js" />
+    <entry file="file://$PROJECT_DIR$/util/loader.js" />
+    <entry file="file://$PROJECT_DIR$/functions/getPrefix.js" />
+    <entry file="file://$PROJECT_DIR$/events/message.js" />
+    <entry file="file://$PROJECT_DIR$/functions/getPrefix.js" />
+    <entry file="file://$PROJECT_DIR$/events/message.js" />
+    <entry file="file://$PROJECT_DIR$/functions/serverCheck.js" />
+    <entry file="file://$PROJECT_DIR$/functions/userCheck.js" />
+    <entry file="file://$PROJECT_DIR$/config.js" />
+    <entry file="file://$PROJECT_DIR$/commands/Bank/receipt.js" />
+    <entry file="file://$PROJECT_DIR$/commands/Bank/transfer.js" />
+    <entry file="file://$PROJECT_DIR$/commands/Bank/balance.js" />
+    <entry file="file://$PROJECT_DIR$/commands/Bank/daily.js" />
+    <entry file="file://$PROJECT_DIR$/finalizers/commandCooldown.js" />
+    <entry file="file://$PROJECT_DIR$/commands/User/profile.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/komada/src/functions/regExpEsc.js" />
+    <entry file="file://$PROJECT_DIR$/events/message.js" />
+    <entry file="file://$PROJECT_DIR$/functions/getPrefix.js" />
+    <entry file="file://$PROJECT_DIR$/events/guildCreate.js" />
+    <entry file="file://$PROJECT_DIR$/util/loader.js" />
+    <entry file="file://$PROJECT_DIR$/config/config.js" />
+    <entry file="file://$PROJECT_DIR$/src/commands/ping.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot.js" />
+    <entry file="file://$PROJECT_DIR$/struct/Client.js" />
+    <entry file="file://$PROJECT_DIR$/auth.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inhibitors/blacklist.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/sqlite3/lib/sqlite3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commands/General/help.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/listeners/ready.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="108" lean-forward="false" selection-start-line="10" selection-start-column="108" selection-end-line="10" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commands/Moderation/ban.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commands/Moderation/kick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
