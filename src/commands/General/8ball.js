@@ -23,7 +23,6 @@ class BallCommand extends Command {
     })
   }
   exec(message,args){
-    console.log(args.question);
     const replies = ["Maybe", "Ask again", "No", "Possibly","In the distant future", "Don't count on it", "Absolutely not"]
     const reply = replies[Math.floor(Math.random()*replies.length)];
     return message.reply(reply);
