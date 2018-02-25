@@ -2,6 +2,10 @@
 ### Contact
 [Discord Server](https://discord.gg/4E4pgNT)
 
+### Want to add something?
+Fork the repo and add what you want than create a pull request. Requests will not be accepted
+if something is deleted or changed. Only add things.
+
 ### Setup
 1. Run the command `npm install`. That should install all the dependencies.
 2. Create an auth.json file in the same directory as main.js. Below you can find an example.
