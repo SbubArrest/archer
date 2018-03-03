@@ -1,52 +1,106 @@
-const { Command } = require("discord-akairo");
-const Logger = require('../../util/logger');
+const { Command } = require('discord-akairo');
+const util = require('util');
+
 class EvalCommand extends Command {
-  constructor(){
-    super("eval", {
-      aliases: ["eval", 'e'],
+  constructor() {
+    super('eval', {
+      aliases: ['eval', 'e'],
+      category: 'owner',
       ownerOnly: true,
-      clientPermissions: ["EMBED_LINKS"],
+      protected: true,
       args: [
         {
-          id:"code",
-          type:"string",
-          match: "content",
+          id: 'code',
+          match: 'rest'
         }
       ]
-    })
+    });
   }
-  exec(message,args) {
-    let code = args.code;
-    if(code.match('client.token')) return message.reply("Lmao really?");
-    if (!code) return message.reply("Where is the code at lmao.");
-    if (code.length > 1000) return message.reply("You want me to process all that?");
-    let output;
-    try {
-      output = eval(code);
-    }catch(error){
-      output = error;
-    }
-    if(!output) return message.reply("Whut? Where is the output?");
-    if (output.length > 1000) output = "Output length is greater than 1000 characters";
-    let embed = {
-      title:"Eval",
-      color:"5675007",
-      fields:[
-        {
-          name:'Input :inbox_tray:',
-          value: `\`\`\`js\n${code}\n\`\`\``,
-        },
-        {
-          name:'Output :outbox_tray:',
-          value: `\`\`\`\n${output}\n\`\`\``
-        },
-        {
-          name: 'Type (🚹 or 🚺)',
-          value: `${typeof code}`
-        }
-      ]
+
+  async exec(message, { code }) {
+    if (!code) return message.util.reply('No code provided!');
+
+    const evaled = {};
+    const logs = [];
+
+    const token = this.client.token.split('').join('[^]{0,2}');
+    const rev = this.client.token.split('').reverse().join('[^]{0,2}');
+    const tokenRegex = new RegExp(`${token}|${rev}`, 'g');
+    const cb = '```';
+
+    const print = (...a) => { // eslint-disable-line no-unused-vars
+      const cleaned = a.map(obj => {
+        if (typeof o !== 'string') obj = util.inspect(obj, { depth: 1 });
+        return obj.replace(tokenRegex, '[TOKEN]');
+      });
+
+      if (!evaled.output) {
+        logs.push(...cleaned);
+        return;
+      }
+
+      evaled.output += evaled.output.endsWith('\n') ? cleaned.join(' ') : `\n${cleaned.join(' ')}`;
+      const title = evaled.errored ? '☠\u2000**Error**' : '📤\u2000**Output**';
+
+      if (evaled.output.length + code.length > 1900) evaled.output = 'Output too long.';
+      evaled.message.edit([
+        `📥\u2000**Input**${cb}js`,
+        code,
+        cb,
+        `${title}${cb}js`,
+        evaled.output,
+        cb
+      ]);
     };
-    return message.channel.send({embed:embed});
+
+    try {
+      let output = eval(code);
+      if (output && typeof output.then === 'function') output = await output;
+
+      if (typeof output !== 'string') output = util.inspect(output, { depth: 0 });
+      output = `${logs.join('\n')}\n${logs.length && output === 'undefined' ? '' : output}`;
+      output = output.replace(tokenRegex, '[TOKEN]');
+
+      if (output.length + code.length > 1900) output = 'Output too long.';
+
+      const sent = await message.util.send([
+        `📥\u2000**Input**${cb}js`,
+        code,
+        cb,
+        `📤\u2000**Output**${cb}js`,
+        output,
+        cb
+      ]);
+
+      evaled.message = sent;
+      evaled.errored = false;
+      evaled.output = output;
+
+      return sent;
+    } catch (err) {
+      console.error(err); // eslint-disable-line no-console
+      let error = err;
+
+      error = error.toString();
+      error = `${logs.join('\n')}\n${logs.length && error === 'undefined' ? '' : error}`;
+      error = error.replace(tokenRegex, '[TOKEN]');
+
+      const sent = await message.util.send([
+        `📥\u2000**Input**${cb}js`,
+        code,
+        cb,
+        `☠\u2000**Error**${cb}js`,
+        error,
+        cb
+      ]);
+
+      evaled.message = sent;
+      evaled.errored = true;
+      evaled.output = error;
+
+      return sent;
+    }
   }
 }
+
 module.exports = EvalCommand;
